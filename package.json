@@ -1,0 +1,46 @@
+{
+	"name": "@supportclass/stylelint-config",
+	"version": "0.0.0-development",
+	"description": "Support Class' re-usable config for the Stylelint CSS linter.",
+	"main": "stylelint.config.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"semantic-release": "semantic-release"
+	},
+	"files": [
+		"stylelint.config.js"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SupportClass/stylelint-config.git"
+	},
+	"keywords": [
+		"prettier",
+		"config"
+	],
+	"author": "Support Class <alex@supportclass.net>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/SupportClass/stylelint-config/issues"
+	},
+	"homepage": "https://github.com/SupportClass/stylelint-config#readme",
+	"devDependencies": {
+		"@commitlint/cli": "^7.5.2",
+		"@commitlint/config-conventional": "^7.5.0",
+		"husky": "^1.3.1",
+		"semantic-release": "^15.13.3"
+	},
+	"husky": {
+		"hooks": {
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+		}
+	},
+	"dependencies": {
+		"stylelint-config-standard": "^18.3.0",
+		"stylelint-order": "^3.0.0",
+		"stylelint-selector-bem-pattern": "^2.1.0"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}
